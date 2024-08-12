@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="information.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Masopia - Digital Marketing Agency</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Masopia</div>
+    <div class="toggle-button" id="toggleButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="market.html" class="nav1">ዋና ክፍል</a></li>
+      <li><a href="description.html" class="nav2">ማብራሪያ</a></li>
+      <li><a href="aboutus.html" class="nav3">ማንነታችን</a></li>
+      <li><a href="information.html" class="nav4">መገኛ</a></li>
+    </ul>
+  </nav>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h4>About Us</h4>
+        <p>We are a digital marketing agency based in Gondar, Ethiopia, specializing in managing social media accounts for restaurants. Our mission is to help your business grow online and reach more customers.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> masopiapromotionagmail.com</p>
+        <p><i class="fas fa-phone"></i> +251 716 370 587</p>
+        <p><i class="fas fa-map-marker-alt"></i> Gondar, Ethiopia</p>
+      </div>
+
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Masopia Promotion| All Rights Reserved</p>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    const menu = document.getElementById('menu');
+
+    toggleButton.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      toggleButton.classList.toggle('active');
+    });
+  });
+</script>
+
+  <script src="information.js"></script>
+</body>
+</html>

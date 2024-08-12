@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="description.css">
+  </head>
+  <body>
+    <nav class="navbar">
+    <div class="logo">Masopia</div>
+    <div class="toggle-button" id="toggleButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="market.html" class="nav1">ዋና ክፍል</a></li>
+      <li><a href="description.html" class="nav2">ማብራሪያ</a></li>
+      <li><a href="aboutus.html" class="nav3">ማንነታችን</a></li>
+      <li><a href="information.html" class="nav4">መገኛ</a></li>
+    </ul>
+  </nav>
+    <section class="about-us">
+  <div class="container">
+    <h2>ማብራሪያ</h2>
+    <p>
+      እኛ በጎንደር ኢትዮጵያ የሚገኝ የዲጂታል ማርኬቲንግ ወኪል ነን። የምንሰራበት ክህሎት የምርጥ ሰራተኞችን ማሳቀበል እና ልዩ ስራዎችን መስራት ሲሆን በአንዳንድ የምርቶችና የአገልግሎቶች ማስታወቅ ላይ ከፍተኛ ስራ እንሠራለን። ለእርስዎ ምቹ የዲጂታል ማርኬቲንግ መፍትሄ እንዲሆን እንገልጻለን።
+    </p>
+  </div>
+</section>
+<section class="portfolio">
+  <div class="card">
+    <div class="card-content">
+      <h3>Graphics</h3>
+      <p>We create stunning graphics that capture the essence of your brand and engage your audience.</p>
+      <a href="graphics.html" class="more-link">Click More</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3>Video</h3>
+      <p>Our video production services bring your ideas to life with high-quality visuals and compelling stories.</p>
+      <a href="video.html" class="more-link">Click More</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3>Website</h3>
+      <p>We design and develop responsive websites that are both functional and visually appealing to enhance your online presence.</p>
+      <a href="website.html" class="more-link">Click More</a>
+    </div>
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    const menu = document.getElementById('menu');
+
+    toggleButton.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      toggleButton.classList.toggle('active');
+    });
+  });
+</script>
+    
+  </body>
+</html>

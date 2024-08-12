@@ -1,0 +1,300 @@
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar .menu li {
+            margin-left: 20px;
+        }
+
+        .navbar .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .menu li a:hover {
+            color: #f0a500;
+        }
+
+        .navbar .toggle-button {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .navbar .toggle-button .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .toggle-button.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .navbar .toggle-button.active .bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .navbar .toggle-button.active .bar:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 920px) {
+            .navbar .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                padding: 20px 0;
+                z-index: 999;
+            }
+
+            .navbar .menu.active {
+                display: flex;
+            }
+
+            .navbar .menu li {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .navbar .toggle-button {
+                display: flex;
+            }
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .portfolio .card {
+            background-color: #fff;
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .portfolio .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .portfolio .card-content h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .portfolio .card-content p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .portfolio .card-content .more-link {
+            text-decoration: none;
+            color: #f0a500;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .portfolio .card-content .more-link:hover {
+            color: #333;
+        }
+
+        /* Meet Our Team Section */
+        .team {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .team h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .team .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team .team-member {
+            background-color: #f4f4f4;
+            width: 250px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .team .team-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .team .member-info {
+            padding: 20px;
+        }
+
+        .team .member-info h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team .member-info p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-section {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        footer .footer-section h4 {
+            font-size: 24px;
+            color: #f0a500;
+            margin-bottom: 20px;
+        }
+
+        footer .footer-section p,
+        footer .footer-section ul {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        footer .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer .footer-section ul li a {
+            color: #f0a500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-section ul li a:hover {
+            color: #fff;
+        }
+
+        footer .footer-section .social a {
+            color: #f0a500;
+            margin-right: 10px;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-section .social a:hover {
+            color: #fff;
+        }
+
+        footer .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }

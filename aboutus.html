@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="abouts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+   <nav class="navbar">
+    <div class="logo">Masopia</div>
+    <div class="toggle-button" id="toggleButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="market.html" class="nav1">ዋና ክፍል</a></li>
+      <li><a href="description.html" class="nav2">ማብራሪያ</a></li>
+      <li><a href="aboutus.html" class="nav3">ማንነታችን</a></li>
+      <li><a href="information.html" class="nav4">መገኛ</a></li>
+    </ul>
+  </nav>
+    <section class="about-us">
+  <h2>ማንነታችን</h2>
+  <p>
+    ቡድናችን በአንድነት በህብረት  የሚሰራ፣ በእያንዳንዱ ፕሮጀክት የላቀ ብቃት እና ትጋትን የሚያረጋግጦ።  የላቀ ውጤት ለማምጣት ጥንካሬ እና እውቀት በማጣመር የሚሰራ ቡድን ነው።
+  </p>
+</section>
+<section class="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="micky.jpg" alt="Michael" class="team-image">
+      <div class="member-info">
+        <h3>Michael</h3>
+        <p><strong>Role:</strong> CEO</p>
+        <p><strong>Expertise:</strong> Graphic Design, Logo, Business Cards</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="fasil.jpg" alt="Fasil" class="team-image">
+      <div class="member-info">
+        <h3>Fasil</h3>
+        <p><strong>Role:</strong> Co-Founder</p>
+        <p><strong>Expertise:</strong> Content Creation, Copyright, Website</p>
+      </div>
+    </div>
+    <div class="team-member">
+  <img src="surafel.jpg" alt="Surafel" class="team-image">
+  <div class="member-info">
+    <h3>Surafel</h3>
+    <p><strong>Role:</strong> Co-Founder</p>
+    <p><strong>Expertise:</strong> Video Editing, Website Algorithms</p>
+  </div>
+</div>
+
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    const menu = document.getElementById('menu');
+
+    toggleButton.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      toggleButton.classList.toggle('active');
+    });
+  });
+</script>
+  </body>
+</html>

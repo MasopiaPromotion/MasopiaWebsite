@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9; /* Light background for body */
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #282c34; /* Dark background for navbar */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.toggle-button {
+  display: none;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #61dafb; /* Light blue highlight */
+}
+
+/* Responsive Navbar */
+@media (max-width: 920px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #282c34;
+    width: calc(100% - 40px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu a {
+    font-size: 20px;
+  }
+
+  .toggle-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* About Us Section */
+.about-us {
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #282c34;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Team Section */
+.team {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #282c34;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #282c34;
+}
+
+.member-info p {
+  font-size: 16px;
+  color: #777;
+}
+
+.member-info p strong {
+  color: #282c34;
+}

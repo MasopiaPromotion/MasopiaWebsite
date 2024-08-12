@@ -1,0 +1,167 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.toggle-button {
+  display: none;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffcc00; /* Highlight color */
+}
+
+/* Responsive Navbar */
+@media (max-width: 920px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjusted to align below the navbar */
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .toggle-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.about-us h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Portfolio Styles */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.more-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.more-link:hover {
+  background-color: #333;
+  color: #fff;
+}

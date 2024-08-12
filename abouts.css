@@ -180,3 +180,28 @@ body {
 .member-info p strong {
   color: #282c34;
 }
+
+/* Responsive Team Section */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive About Us Section */
+@media (max-width: 768px) {
+  .about-us h2 {
+    font-size: 28px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+}
